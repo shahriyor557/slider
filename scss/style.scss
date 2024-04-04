@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Path\ 4.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin: 0;
+
+    .slider {
+        margin: 0 auto;
+        width: 100%;
+        height: 657px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            width: 100%;
+            height: 657px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .sectionn {
+                position: absolute;
+                width: 90%;
+                height: 657px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: 0.5s;
+                transform: scale(0);
+
+                .info {
+                    width: 50%;
+                    height: 100%;
+                    z-index: 666;
+                    background-image: url("../img/info.svg");
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: 260px 210px;
+
+                    p {
+                        max-width: 635px;
+                        width: 100%;
+                        height: 220px;
+                        font-family: Inter;
+                        font-size: 32px;
+                        font-weight: 300;
+                        line-height: 44px;
+                        text-align: left;
+                        transform: translateX(150px);
+                        margin-top: 50px;
+
+
+                    }
+                }
+
+                .section_img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+                    height: 100%;
+                    background-image: url("../img/Group\ 8\ \(1\).svg");
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: center;
+
+                    img {
+                        height: 580px;
+                        width: 580px;
+                        margin-top: 50px;
+                    }
+                }
+
+                &.active {
+                    opacity: 1;
+                    transform: scale(1);
+
+                }
+            }
+            .third{
+                img{
+                    border-radius: 50px;
+                }
+            }
+
+        }
+
+
+
+
+        .all_button {
+            width: 112px;
+            height: 56px;
+            border-radius: 50px;
+            background-color: white;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+
+            button {
+                border: none;
+                background-color: inherit;
+                cursor: pointer;
+            }
+
+
+        }
+
+
+    }
+}
